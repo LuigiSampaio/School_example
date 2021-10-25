@@ -1,12 +1,12 @@
 :root {
     --gradient: linear-gradient(90deg, var(--orange40f), var(--orangec12));
     --white:#fff;
-    --silver444:#444;
+    --silver444:#ff9e00;
     --silver333:#333;
     --silver777:#777;
     --seilver999:#999;
-    --orangec12:#f39c12;
-    --orange40f:#f1c40f;
+    --orangec12:#3c096c;
+    --orange40f:#7b2cbf;
     --black111: #111;
     --silver222: #222;
 }
