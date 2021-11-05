@@ -1,12 +1,12 @@
 :root {
-    --gradient: linear-gradient(90deg, var(--orange40f), var(--orangec12));
+    --gradient: linear-gradient(90deg, var(--violet96c), var(--violetcbf));
     --white:#fff;
-    --silver444:#ff9e00;
+    --orangee00:#ff9e00;
     --silver333:#333;
     --silver777:#777;
     --seilver999:#999;
-    --orangec12:#3c096c;
-    --orange40f:#7b2cbf;
+    --violet96c:#3c096c;
+    --violetcbf:#7b2cbf;
     --black111: #111;
     --silver222: #222;
 }
@@ -24,8 +24,22 @@
 }
 
 *::selection {
-    background-color: var(--orangec12);
+    background-color: var(--violet96c);
     color: var(--white);
+}
+
+.btn {
+    padding: .7rem 3rem;
+    font-size: 2rem;
+    color: var(--white);
+    background: var(--gradient);
+    border-radius: 5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3);
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
 }
 
 html {
@@ -68,7 +82,7 @@ header .navbar ul li a {
 
 header .navbar ul li a .active,
 header .navbar ul li a:hover {
-    color: var(--silver444);
+    color: var(--orangee00);
 }
 
 header #login {
@@ -78,7 +92,7 @@ header #login {
 }
 
 header #login:hover {
-    color: var(--silver444);
+    color: var(--orangee00);
 }
 
 header #menu {
@@ -87,6 +101,98 @@ header #menu {
     cursor: pointer;
     display: none;
 }
+
+.login-form {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: -120%; left: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form.popup {
+    top: 0;
+}
+
+.login-form form {
+    width: 35rem;
+    background-color: var(--white);
+    margin: 0 2rem;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+    box-shadow: 0 .1rem .3rem var(--silver333);
+    position: relative;
+}
+
+.login-form form h3 {
+    font-size: 3rem;
+    color: var(--violet96c);
+    padding: 1rem 0;
+    font-weight: 600;
+}
+
+.login-form .box {
+    width: 100%;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    border-bottom: .2rem solid var(--violetcbf);
+    font-size: 1.6rem;
+    color: var(--silver333);
+    text-transform: none;
+}
+
+.login-form .box::placeholder {
+    text-transform: capitalize;
+}
+
+.login-form .box:focus {
+    border-color: var(--violet96c);
+}
+
+.login-form .box:nth-child(3) {
+    margin-bottom: 5rem;
+}
+
+.login-form form p {
+    font-size: 1.4rem;
+    color: var(--silver777);
+    padding: .5rem 0;
+}
+
+.login-form form p a {
+    color: var(--violet96c);
+}
+
+.login-form form .btn {
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.login-form form .fa-times {
+    position: absolute;
+    top: 1.5rem; right: 2rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--seilver999);
+}
+
+.login-form form .fa-times:hover {
+    color: var(--silver444);
+}
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 768px) {
     html {
@@ -120,10 +226,10 @@ header #menu {
         display: block;
     }
 
-    header .navbar ul li a.active,
+   /*  header .navbar ul li a.active,
     header .navbar ul li a:hover {
-        color: var(--silver444);
-    }
+        color: var(--orangee00);
+    } */
 
     .fa-times {
         transform: rotate(180deg);
