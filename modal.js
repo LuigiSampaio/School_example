@@ -4,7 +4,7 @@ const closeModal = document.querySelector('.login-form form .fa-times')
 
 // Adicionando modal 
 modal.addEventListener('click', () => {
-    modalToggle.classList.add('popup')
+    modalToggle.classList.add('popup');
 });
 
 // Removendo modal
