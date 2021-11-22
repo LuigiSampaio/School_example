@@ -39,7 +39,7 @@ const cardsPosts = [
         card_id: '5',
         img: 'utils/bigData.jpg',
         title: 'Big Data Fundamentos',
-        description: 'Entender sobre a Indústria 4.0 no contexto atual e estar atualizado com as principais tendências nternet das coisas, Computação em nuvem, Big Data, Robótica, Manufatura Digital, Seguraça digital ...',
+        description: 'Entenda Sistemas de Processamento de Dados em Batch, como Hadoop e Hive, Aprenda sobre Sistemas de Tempo Real: Streaming, Conheça Sistemas em Memória com Spark ...',
         hours: '10 horas',
         month: '6 meses',
         modules: '6 modulos',
@@ -47,7 +47,7 @@ const cardsPosts = [
     {
         card_id: '6',
         img: 'utils/componentes.jpg',
-        title: 'Arquiteto IOT',
+        title: 'Aprenda - Arquitetura IOT',
         description: 'Compreender a infraestrutura básica de uma solução de IoT, Entender as limitações dos dispositivos utilizados para a coleta de dados, Definir os melhores protocolos de comunicação com base na aplicação ...',
         hours: '10 horas',
         month: '6 meses',
