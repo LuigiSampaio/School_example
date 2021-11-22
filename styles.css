@@ -1,5 +1,8 @@
 :root {
     --gradient: linear-gradient(90deg, var(--violet96c), var(--violetcbf));
+    --gradient-org: linear-gradient(90deg, var(--orange40f), var(--orangec12));
+    --orangec12:#f39c12;
+    --orange40f:#f1c40f;
     --white:#fff;
     --orangee00:#ff6d00;
     --silver333:#333;
@@ -60,6 +63,12 @@ h3 {
     color: var(--violetcbf);
     text-align: center;
     font-weight: bold;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 /* Fim Estilos Globais */
@@ -394,6 +403,76 @@ header #menu {
 }
 
 /* Fim Seção Professores */
+
+/* Inicio Seção Contato */
+.contato .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.contato .row .form {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 60rem;
+}
+
+.contato .row .form h3 {
+    color: var(--violetcbf);
+}
+
+.contato .row .form form {
+    height: 42rem;
+    background: var(--gradient);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    align-items: flex-start;
+}
+
+.contato .row .form form .box {
+    height: 5rem;
+    width: 49%;
+    border: .1rem solid var(--white);
+    padding: 0 1rem;
+    margin: 1rem 0;
+    font-size: 1.7rem;
+    color: var(--white);
+    background: none;
+    text-transform: none;
+}
+
+.contato .row .form form .box:focus {
+    border-color: var(--orangee00);
+}
+
+
+.contato .row .form form .box::placeholder {
+    text-transform: capitalize;
+    color: var(--white);
+}
+
+.contato .row .form form .address {
+    height: 15rem;
+    padding: 1rem;
+    resize: none;
+    width: 100%;
+}
+
+.contato .row .form form .btn:hover {
+    background: var(--orangee00);
+    color: var(--white);
+}
+
+.contato .row .image img {
+    height: 70vh;
+    margin-top: 50%;
+}
+
+/* Fim Seção Contato */
 
 
 /* Inicio Responsividade */
