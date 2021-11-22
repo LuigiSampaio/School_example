@@ -76,7 +76,6 @@ input[type=number]::-webkit-outer-spin-button {
 /* Inicio Menu Header */
 header {
     width: 100%;
-    height: 7rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -119,7 +118,7 @@ header .navbar ul li a:hover {
 }
 
 header #login {
-    font-size: 3rem;
+    font-size: 4rem;
     color: var(--white);
     cursor: pointer;
 }
@@ -133,7 +132,6 @@ header #menu {
     color: var(--white);
     cursor: pointer;
     display: none;
-    height: 7rem;
 }
 /* Fim Menu Header */
 
@@ -266,6 +264,7 @@ header #menu {
 
 .sobre .content {
     flex: 1 1 40rem;
+    text-align: center;
 }
 
 .sobre .content h3 {
@@ -571,17 +570,12 @@ header #menu {
         display: block;
     }
 
-   /*  header .navbar ul li a.active,
-    header .navbar ul li a:hover {
-        color: var(--orangee00);
-    } */
-
     .fa-times {
         transform: rotate(180deg);
     }
 
     header .navbar.nav-toggle {
-        top: 6.4rem;
+        top: 10rem;
     }
 
     .home h1 {
