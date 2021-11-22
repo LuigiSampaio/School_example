@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>School website</title>
+    <title>School Website</title>
 
     <!-- google fonts cdn link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,11 +13,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
     <!-- font awesome cdn link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
 
     <link rel="stylesheet" href="styles.css">
 
 </head>
+
 <body>
 
     <!-- Início da seção menu navbar -->
@@ -24,12 +26,16 @@
 
         <div id="menu" class="fas fa-bars"></div>
 
-        <a href="#" class="logo"><i class="fas fa-user-graduate"></i></a>
+        <a href="#" class="logo">
+           <!--  <i class="fas fa-user-graduate"></i> -->   
+           <!-- <i class="fas fa-user-graduate"></i> -->
+           <img class='ipti-logo' src="/utils/logo.png" alt="Logo Empresa IPTI">
+        </a>
 
         <nav class="navbar">
             <ul>
                 <li><a href="#home">início</a></li>
-                <li><a href="#cursos">cursos</a></li>
+                <li><a href="#curso">cursos</a></li>
                 <li><a href="#professores">professores</a></li>
                 <li><a href="#sobre">sobre</a></li>
                 <li><a href="#contato">contato</a></li>
@@ -54,38 +60,73 @@
         </form>
     </div>
     <!-- Fim form Login -->
-    
+
     <!-- Inicio seção Home -->
     <section id="home" class="home">
         <h1>Educação para Todos</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste dolore ad obcaecati, itaque consequatur
-            reprehenderit fuga facere accusamus minus harum libero nihil similique placeat modi at rem nam nobis
-            quaerat?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti unde nihil quia veritatis iste, aspernatur
+            enim dolores sint hic, labore eligendi tenetur sit ducimus voluptatibus esse nemo. Dignissimos, quo autem!
+        </p>
         <a href="#"><button class="btn"> Iniciar </button></a>
     </section>
     <!-- Fim seção Home -->
+    
+    <!-- Inicio seção Curso -->
+    <section  id="curso" class="curso">
+        <h3 class="titulo"> cursos populares </h3>
+        <div class="box-container">
+            <!-- <div class="box">
+                <img src="utils/arduino.jpg" alt="Curso">
+                <h3 class="price">R$ 1,99</h3>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                    <a href="#" class="title">Aprenda Front-end</a>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus adipisci aliquam numquam,
+                        accusantium tempora blanditiis sequi aliquid, eum id placeat iusto ex, magnam mollitia accusamus
+                        facere voluptas tenetur molestias natus.</p>
+                    <div class="info">
+                        <h3>
+                            <i class="far fa-clock"></i> 2 horas
+                        </h3>
+                        <h3> <i class="far fa-calendar-alt"></i> 8 meses</h3>
+                        <h3> <i class="fas fa-book"></i> 6 modulos</h3>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <!-- Fim seção Curso -->
 
     <!-- Inicio seção Sobre -->
     <section id="sobre" class="sobre">
 
         <div class="image">
-            <img src="utils/Nerd-amico.svg" alt="Estudante Tecnologia">
+            <img src="utils/Company.svg" alt="Estudante Tecnologia">
         </div>
 
         <div class="content">
             <h3>Quem somos nós?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi perspiciatis sequi mollitia alias nobis
-                fugit quo facere voluptatum modi, inventore perferendis nihil. Error, iure? Nesciunt repellendus ullam
-                animi labore in?</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo veritatis reiciendis, rerum, accusamus nam
-                ratione voluptate distinctio est rem autem aliquid illo expedita nulla corrupti exercitationem
-                aspernatur! Iure, libero magnam!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium eligendi cum quibusdam quae autem
+                fugiat quidem quo fuga magnam, et aperiam id vitae maxime. Inventore quas voluptate omnis enim
+                voluptates!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex itaque culpa nihil sint vero nostrum omnis
+                illum maiores. Ex earum maiores pariatur architecto repellat facere illo temporibus deserunt quo sed!
+            </p>
             <a href="#"><button class="btn"> leia mais</button></a>
         </div>
     </section>
     <!-- Fim seção Sobre -->
 
+   
     <script src="menu.js"></script>
     <script src="modal.js"></script>
+    <script src="cards.js"></script>
 </body>
+
 </html>
