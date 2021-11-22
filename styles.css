@@ -49,7 +49,7 @@
 
 section {
     min-height: 100vh;
-    padding: 1rem 7%;
+    padding: 0.8rem 7%;
     padding-top: 6rem;
 }
 
@@ -388,7 +388,7 @@ header #menu {
 }
 
 .professor .content p {
-    width: 60%;
+    width: 80%;
 }
 
 .professor .content h3 {
@@ -449,7 +449,6 @@ header #menu {
     border-color: var(--orangee00);
 }
 
-
 .contato .row .form form .box::placeholder {
     text-transform: capitalize;
     color: var(--white);
@@ -474,9 +473,8 @@ header #menu {
 
 /* Fim Seção Contato */
 
-
 /* Inicio Responsividade */
-@media (max-width: 768px) {
+@media (max-width: 970px) {
     html {
         font-size: 55%;
     }
@@ -519,6 +517,36 @@ header #menu {
 
     header .navbar.nav-toggle {
         top: 6.4rem;
+    }
+
+    .home h1 {
+        top: 6.4rem;
+    }
+
+    .home p {
+        width: auto;
+    }
+
+    .teacher p {
+        width: auto;
+    }
+
+    .contato .row .image img  {
+        display: none; 
+    }
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 50%;
+    }
+
+    .contato .row .form form {
+        height: auto;
+    }
+
+    .contato .row .form form .box {
+        width: 100%;
     }
 }
 /* Fim Responsividade */
