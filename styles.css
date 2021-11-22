@@ -248,6 +248,7 @@ header #menu {
 .sobre .image {
     flex: 1 1 40rem;
 }
+
 .sobre .image img {
     height: 65vh;
     width: 100%;
@@ -353,26 +354,46 @@ header #menu {
 
 /* Fim Seção Curso */
 
+/* Inicio Seção Professores */
+.professor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
+.professor .image {
+    flex: 1 1 40rem;
+}
 
+.professor .image img {
+    height: 60vh;
+    width: 100%;
+}
 
+.professor .content {
+    flex: 1 1 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.professor .content p {
+    width: 60%;
+}
 
+.professor .content h3 {
+    font-size: 3.5rem;
+    color: var(--violetcbf);
+}
 
+.professor .content p {
+    font-size: 1.5rem;
+    color: var(--silver777);
+    padding: 1rem 0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Fim Seção Professores */
 
 
 /* Inicio Responsividade */
