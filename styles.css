@@ -49,7 +49,7 @@
 
 section {
     min-height: 100vh;
-    padding: 0.8rem 7%;
+    padding: 1rem 7%;
     padding-top: 6rem;
 }
 
@@ -76,7 +76,7 @@ input[type=number]::-webkit-outer-spin-button {
 /* Inicio Menu Header */
 header {
     width: 100%;
-    height: 80px;
+    height: 7rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -133,6 +133,7 @@ header #menu {
     color: var(--white);
     cursor: pointer;
     display: none;
+    height: 7rem;
 }
 /* Fim Menu Header */
 
@@ -472,6 +473,70 @@ header #menu {
 }
 
 /* Fim Seção Contato */
+
+/* Inicio Seção Footer */
+.footer {
+    background: var(--silver333);
+}
+
+.footer .box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer .box-container .box {
+    margin: 1.5rem;
+    text-align: center;
+    flex: 1 1 50rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.5rem;
+    color: var(--seilver999);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box p {
+    font-size: 1.7rem;
+    color: var(--white);
+    padding: .7rem 0;
+}
+
+.footer .box-container .box p {
+    text-transform: none;
+}
+
+.footer .box-container .box p i {
+    padding-right: .5rem;
+    color: var(--violetcbf);
+}
+ 
+.footer .box-container .box a {
+    font-size: 1.8rem;
+    display: block;
+    padding: .5rem 0;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.footer .box-container .box a:hover {
+    color: var(--violetcbf);
+}
+
+.footer .credit {
+    padding: 2rem 1rem;
+    font-size: 1.2rem;
+    color: var(--white);
+    background: var(--black111);
+    text-align: center;
+    font-weight: normal;
+}
+
+.footer .credit a {
+    color: var(--violetcbf);
+}
+/* Fim Seção Footer */
 
 /* Inicio Responsividade */
 @media (max-width: 970px) {
